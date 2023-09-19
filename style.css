@@ -1,0 +1,98 @@
+*,
+*::before, 
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+canvas{
+    z-index: 1;
+}
+
+.menu{
+    position: fixed;
+    top: 48%;
+    transform: translateY(-50%);
+    box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.3);
+    z-index: 2;
+}
+
+.button{
+    width: calc(100vw / 30);
+    height: calc(100vw / 30);
+    border: 1px solid white;
+    border-bottom: 1px solid rgba(34, 60, 80, 0.3);
+    border-right: 1px solid rgba(34, 60, 80, 0.3);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.button:first-child{
+    border-top: 1px solid rgba(34, 60, 80, 0.3);
+}
+
+#file{
+    cursor: pointer;
+}
+
+.button img{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0; bottom: 0; left: 0; right: 0;
+    user-select: none;
+}
+
+.buttonActive{
+    position: absolute;
+    height: 100%;
+    width: 6%;
+    background-color: rgb(83, 200, 83);
+    left: -7%;
+    transition: .2s;
+}
+
+#file{
+    position: absolute;
+    height: 100%;
+    opacity: 0;
+    
+}
+
+.itemInputBox{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: fixed;
+    text-align: center;
+    display: none;   
+}
+#itemInput{
+    width: 40%;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 3px solid #ccc;
+    padding: 12px 20px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+input:focus{
+    border: 3px solid #555;
+}

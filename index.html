@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Cognitive Map</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="menu">
+        <div class="button btnOpen">
+          <div class="buttonActive"></div>
+          <img src="./icons/open-icon.png" />
+          <input type="file" id="file" />
+        </div>
+        <a id="blobLink">
+          <div class="button btnSave">
+            <div class="buttonActive"></div>
+            <img src="./icons/download-icon.png" />
+          </div>
+        </a>
+      </div>
+
+      <div class="itemInputBox">
+        <input type="text" name="itemText" id="itemInput" />
+      </div>
+
+      <canvas class="canvas"></canvas>
+    </div>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
